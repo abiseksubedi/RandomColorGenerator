@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Color Flipper</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(172, 190, 238);
+
+        }
+
+        nav {
+            padding-left: 1em;
+            padding-right: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0 4px 5px black;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            font-size: 12px;
+        }
+
+        ul li a {
+            width: em;
+            margin: 1em;
+            text-decoration: none;
+            color: Green;
+        }
+
+
+
+        .forNOreason {
+            height: 80vh;
+            display: grid;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+
+    <nav>
+        <Header>Color Flipper</Header>
+        <ul>
+            <li>
+                <a href="Hex.html">HEX</a>
+            </li>
+            <li>
+                <a href="colorflipper.html">Simple</a>
+            </li>
+            <li>
+                <a href="counter.html">Counter</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1> This is my second JS project !</h1>
+    <div class="forNOreason">
+        <div class="btn">
+            <h4>Chnage the background using the button below</h4>
+
+
+
+            <button class="btn" id="btn"> click me</button>
+        </div>
+    </div>
+
+    <script>
+
+        let colors = ["yellow", "green", "white", "black", "grey"];
+
+
+        btn.addEventListener('click', function () {
+            clr = Math.floor(Math.random() * colors.length);
+            console.log(clr);
+            document.body.style.backgroundColor = colors[clr];
+        })
+
+    </script>
+
+</body>
+
+</html>
